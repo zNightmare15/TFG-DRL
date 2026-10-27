@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Temporary installation scripts and packaging
+get-pip.py
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# DRL checkpoints, model weights and tensorboard logs
+models/checkpoints/*.zip
+models/checkpoints/*.pt
+models/checkpoints/*.pth
+!models/pretrained/.gitkeep
+!models/checkpoints/.gitkeep
+
+# Logs and telemetry data
+logs/training/*
+logs/telematics/*
+logs/tensorboard/*
+!logs/training/.gitkeep
+!logs/telematics/.gitkeep
+!logs/tensorboard/.gitkeep
+
+# Generated trajectory data
+data/trajectories/*
+data/benchmark_results/*
+!data/trajectories/.gitkeep
+!data/benchmark_results/.gitkeep
+
+# PyBullet temporary files and simulation recordings
+*.bullet
+*.log
+*.mp4
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
